@@ -100,18 +100,21 @@ type ClimateState struct {
 
 // DriveState contains the current drive state of the vehicle.
 type DriveState struct {
-	Timestamp               timeMsec    `json:"timestamp"`
-	ShiftState              interface{} `json:"shift_state"`
-	Speed                   float64     `json:"speed"`
-	Latitude                float64     `json:"latitude"`
-	Longitude               float64     `json:"longitude"`
-	Heading                 int         `json:"heading"`
-	GpsAsOf                 int64       `json:"gps_as_of"`
-	NativeLatitude          float64     `json:"native_latitude"`
-	NativeLocationSupported int         `json:"native_location_supported"`
-	NativeLongitude         float64     `json:"native_longitude"`
-	NativeType              string      `json:"native_type"`
-	Power                   int         `json:"power"`
+	Timestamp                      timeMsec    `json:"timestamp"`
+	ShiftState                     interface{} `json:"shift_state"`
+	Speed                          float64     `json:"speed"`
+	Latitude                       float64     `json:"latitude"`
+	Longitude                      float64     `json:"longitude"`
+	Heading                        int         `json:"heading"`
+	GpsAsOf                        int64       `json:"gps_as_of"`
+	NativeLatitude                 float64     `json:"native_latitude"`
+	NativeLocationSupported        int         `json:"native_location_supported"`
+	NativeLongitude                float64     `json:"native_longitude"`
+	NativeType                     string      `json:"native_type"`
+	Power                          int         `json:"power"`
+	ActiveRouteLatitude            float64     `json:"active_route_latitude"`
+	ActiveRouteLongitude           float64     `json:"active_route_longitude"`
+	ActiveRouteTrafficMinutesDelay float64     `json:"active_route_traffic_minutes_delay"`
 }
 
 // GuiSettings contains the current GUI settings of the vehicle.
